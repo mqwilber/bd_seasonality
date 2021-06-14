@@ -1,9 +1,10 @@
-This files describes the content of the folder containing the code and data to replicate the analyses presented in the manuscript "Once a reservoir, always a reservoir? Seasonality affects the pathogen maintenance potential of amphibian hosts". All of the analyses were performed in Python.  The Python environment from which all of the results were generated is given by the `environment.yml' file. The Python environment needed to replicate the analyses can be built from this file (see https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file).
+This files describes the content of the folder containing the code and data to replicate the analyses presented in the manuscript "Once a reservoir, always a reservoir? Seasonality affects the pathogen maintenance potential of amphibian hosts". All of the analyses were performed in Python.  The Python environment from which all of the results were generated is given by the `environment.yml` file. The Python environment needed to replicate the analyses can be built from this file (see https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file).
 
 **First steps**
 
 1. Unzip data.zip at its current location in the directory structure
 2. Unzip results/pickled_resuts at its current location in the directory structure
+3. Build the Python environment specified by `environment.yml`
 
 `code/`: The folder contains the modules and scripts that simulate the reduced and full host-parasite IPM, fit the model, and explore the dynamics of the resulting model. Documentation is also provided in each script.
 
@@ -23,9 +24,9 @@ This files describes the content of the folder containing the code and data to r
 
     - `*_params/`: This folder contains two files
 
-        - `*_site_level_params.yml`: File contains information on the sites that were sampled in the given location and the sites that are used when fitting the reduced IPM at that location. In addition, this file contains information on the informative priors for the transmission parameter trans_beta that were calculated using a slice likelihood approach as described in the supplementary material (Appendix S3). These informative priors differ for each density assumption.
+        - `*_site_level_params.yml`: File contains information on the sites that were sampled in the given location and the sites that are used when fitting the reduced IPM at that location. In addition, this file contains information on the informative priors for the transmission parameter `trans_beta` that were calculated using a slice likelihood approach as described in Appendix S3 of the manuscript. These informative priors differ for each density assumption.
 
-        - `spp_params_*.yml`: File contains a list of default parameters for the particular leopard frog species in the particular site that are used when fitting the model. **NOTE**: Not all parameters given in this file are used when fitting the model. In addition, the values of parameters that are specifically estimated when fitting the model (e.g. trans_beta) are not the same as the values shown in this file.  The values given in this file are place-holders and the estimated values are substituted in when simulating the model.  The life-history parameters, however, such as larval_period, breeding_start, breeding_end, aquatic, hibernation, etc. are all fixed and based on our observations of these species in the field and previously reported values.
+        - `spp_params_*.yml`: File contains a list of default parameters for the particular leopard frog species in the particular site that are used when fitting the model. **NOTE**: Not all parameters given in this file are used when fitting the model. In addition, the values of parameters that are specifically estimated when fitting the model (e.g., `trans_beta`) are not the same as the values shown in this file.  The values given in this file are placeholders and the estimated values are substituted in when simulating the model.  The life history parameters, however, such as `larval_period`, `breeding_start`, `breeding_end`, `aquatic`, `hibernation`, etc. are all fixed and based on our observations of these species in the field and previously reported values. The pickled files described below contain the fitted parameter values.
 
 `data/`: **NOTE**: Unzip data.zip to access `data/` folder. This folder contains the field data on leopard frogs from four different geographic locations that we use in this analysis. This folder also contains temperature data.
 - `leopard_frog_data.csv`: The field data that contains information on sampled leopard frogs through time.
@@ -38,5 +39,6 @@ This files describes the content of the folder containing the code and data to r
     - `measured_temperature_data/`: Contains four folders, one for each location
         - `*/`: Each folder contains one file
             - `hobo_water_temperature.csv`: Contains the water temperature for a given site within a geographic location every 30 minutes as recorded by HOBO data loggers in the field.
+
 `results/`: The results folder. This folder contains one folder
-    - `pickled_results/`: This folder contains a file for each of the 48 models shown in the main text. These files are `*.pkl` files, which means they are pickled Python objects.  These files contain all of the MCMC results for the fitted models and are used to extract the best fit parameters and compare DIC values among fitted models.  The naming nomenclature is described in model_analysis.ipynb. **NOTE**: To reduce its size, the pickled results folder is initially zipped.  Unzip this folder to gain access to the fitted models.
+- `pickled_results/`: This folder contains a file for each of the 48 models shown in the main text. These files are `*.pkl` files, which means they are pickled Python objects.  These files contain all of the MCMC results for the fitted models and are used to extract the best fit parameters and compare DIC values among fitted models.  The naming nomenclature is described in model_analysis.ipynb. **NOTE**: To reduce its size, the pickled results folder is initially zipped.  Unzip this folder to gain access to the fitted models.
