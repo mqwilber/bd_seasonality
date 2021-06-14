@@ -47,4 +47,4 @@ First steps:
 
 `results/': The results folder. This folder contains one folder
 
-    - `pickled_results/': This folder contains a file for each of the 48 models shown in the main text. These files are "*.pkl" files, which means they are pickled Python objects.  These files contain all of the MCMC results for the fitted models and are used to extract the best fit parameters and compare DIC values among fitted models.  The naming nomenclature is described in model_analysis.ipynb. **NOTE**: To reduce its size, the pickled results folder is initially zipped.  Unzip this folder gain access to the fitted models.
+    - `pickled_results/': This folder contains a file for each of the 48 models shown in the main text. These files are "*.pkl" files, which means they are pickled Python objects.  These files contain all of the MCMC results for the fitted models and are used to extract the best fit parameters and compare DIC values among fitted models.  The naming nomenclature is described in model_analysis.ipynb. **NOTE**: To reduce its size, the pickled results folder is initially zipped.  Unzip this folder to gain access to the fitted models.
