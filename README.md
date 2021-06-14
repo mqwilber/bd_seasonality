@@ -14,7 +14,7 @@ This files describes the content of the folder containing the code and data to r
 
 - `full_model.py`: Module that contains the classes used to instantiate and simulate a full host-parasite IPM.
 
-- `model_analysis.*`: A jupyter notebook and html file that reproduces many of the plots and quantities provided in the manuscript using the fitted reduced IPMs.
+- `model_analysis.*`: A jupyter notebook and html file that reproduces many of the plots and quantities provided in the manuscript using the fitted reduced IPMs. The HTML file gives an easy, non-interactive view into this file.  The Jupyter Notebook (ipynb) allows for exploration of the models.
 
 - `reduced_mcmc.py`: Script that fits the reduced IPMs to the observed field data.
 
@@ -41,4 +41,4 @@ This files describes the content of the folder containing the code and data to r
             - `hobo_water_temperature.csv`: Contains the water temperature for a given site within a geographic location every 30 minutes as recorded by HOBO data loggers in the field.
 
 `results/`: The results folder. This folder contains one folder
-- `pickled_results/`: This folder contains a file for each of the 48 models shown in the main text. These files are `*.pkl` files, which means they are pickled Python objects.  These files contain all of the MCMC results for the fitted models and are used to extract the best fit parameters and compare DIC values among fitted models.  The naming nomenclature is described in model_analysis.ipynb. **NOTE**: To reduce its size, the pickled results folder is initially zipped.  Unzip this folder to gain access to the fitted models.
+- `pickled_results/`: This folder contains a file for each of the 48 models shown in the main text. These files are `*.pkl` files, which means they are pickled Python objects.  These files contain all of the MCMC results for the fitted models and are used to extract the best fit parameters and compare DIC values among fitted models.  The naming nomenclature is described in `model_analysis.ipynb`. **NOTE**: To reduce its size, the pickled results folder is initially zipped.  Unzip this folder to gain access to the fitted models.
