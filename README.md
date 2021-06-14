@@ -2,8 +2,8 @@ This files describes the content of the folder containing the code and data to r
 
 **First steps**
 
-1. Unzip data.zip at its current location in the directory structure
-2. Unzip results/pickled_resuts at its current location in the directory structure
+1. Unzip `data.zip` at its current location in the directory structure
+2. Unzip `results/pickled_results.zip` at its current location in the directory structure
 3. Build the Python environment specified by `environment.yml`
 
 `code/`: The folder contains the modules and scripts that simulate the reduced and full host-parasite IPM, fit the model, and explore the dynamics of the resulting model. Documentation is also provided in each script.
