@@ -1,0 +1,27 @@
+spp:
+  LISP : [1, 2, 3, 4, 5]
+
+sites : [1, 2, 3, 4, 5]
+
+# Informative priors based on slice likelihood
+# Format is ["prior as string", transformation]
+priors_K=4:
+  loss_load:
+    trans_beta: ["stats.uniform(loc=1e-5, scale=4.9e-4)", "minmax"]
+  no_loss_load:
+    trans_beta: ["stats.uniform(loc=1e-5, scale=4.9e-4)", "minmax"]
+
+
+priors_K=8:
+  loss_load:
+    trans_beta: ["stats.uniform(loc=1.1e-4, scale=0.00229)", "minmax"]
+  no_loss_load:
+    trans_beta: ["stats.uniform(loc=1.1e-4, scale=0.00229)", "minmax"]
+
+
+priors_K=10:
+  loss_load:
+    trans_beta: ["stats.uniform(loc=1.6e-4, scale=5.84e-3)", "minmax"]
+  no_loss_load:
+    trans_beta: ["stats.uniform(loc=1.6e-4, scale=5.84e-3)", "minmax"]
+

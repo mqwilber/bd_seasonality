@@ -1,0 +1,25 @@
+spp:
+  LIPI : [3]
+
+sites : [1, 2, 3, 4]
+
+# Informative priors based on slice likelihood
+# Format is ["prior as string", transformation]
+priors_K=4:
+  loss_load:
+    trans_beta: ["stats.uniform(loc=1.7e-9, scale=7.58e-08)", "minmax"]
+  no_loss_load:
+    trans_beta: ["stats.uniform(loc=5.9e-7, scale=6.41e-06)", "minmax"]  # This is for trans_beta_temp and null_model
+
+priors_K=8:
+  loss_load:
+    trans_beta: ["stats.uniform(loc=9e-8, scale=4.91e-6)", "minmax"]
+  no_loss_load:
+    trans_beta: ["stats.uniform(loc=2e-5, scale=8.8e-4)", "minmax"]
+
+
+priors_K=10:
+  loss_load:
+    trans_beta: ["stats.uniform(loc=4e-7, scale=4.96e-05)", "minmax"]
+  no_loss_load:
+    trans_beta: ["stats.uniform(loc=3e-5, scale=2.97e-3)", "minmax"]

@@ -1,0 +1,58 @@
+# Default parameters for LIPI
+
+params :
+    s0: 0.995
+    sI: 1
+    mu_s: 60
+    sigma_s: 0.01
+    mu_l: 1
+    sigma_l: 1.15
+    lI: -1
+    lI_temp: 0
+    trans_beta: 0.0001
+    trans_beta_temp: 0
+    mu0: 2
+    mu0_temp : 0
+    mu0_mm : 0
+    a: 1
+    a_temp: 0
+    b: 0.5
+    k: 1
+    sigma_full: 1
+    sigma_full_temp: 0
+    lam: 1
+    r: 600
+    K: 6.5
+    mean_temp: 15
+    breeding_start: 75
+    breeding_end: 150
+    larval_period: 90
+    tad_shedding: 0
+    aquatic: 0
+    lI_cv: 0
+    lI_mm: 0
+    trans_beta_cv: 0
+    trans_beta_mm: 0
+    a_cv: 0
+    a_mm: 0
+    fit_mu0: False
+    omega : 2
+    omega_temp : -0.5
+    hibernation : 1 # Does the individual hibernate?
+    hibernation_aquatic : 1 # Does hibernation happen in water where transmission can occur?
+    hibernation_start : 315 # Mid-November
+    hibernation_end : 75 # Same as breeding start. Animals migrate from hibernation to breeding
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+spp:
+  LIPI : [3, 4]  # Sites that we use when fitting the model
+
+sites : [1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12]
+
+# Informative priors on trans_beta
+# Format is ["prior as string", transformation]
+priors_K=4:
+  loss_load:
+    trans_beta: ["stats.uniform(loc=2e-9, scale=8.698e-06)", "minmax"]
+  no_loss_load:
+    trans_beta: ["stats.uniform(loc=1e-9, scale=9.499e-06)", "minmax"]
+
+priors_K=8:
+  loss_load:
+    trans_beta: ["stats.uniform(loc=2.1e-5, scale=2.79e-4)", "minmax"]
+  no_loss_load:
+    trans_beta: ["stats.uniform(loc=2.2e-8, scale=3.19e-3)", "minmax"]
+
+priors_K=10:
+  loss_load:
+    trans_beta: ["stats.uniform(loc=6.5e-5, scale=9.35e-4)", "minmax"]
+  no_loss_load:
+    trans_beta: ["stats.uniform(loc=6.3e-7, scale=0.00999937)", "minmax"]
+

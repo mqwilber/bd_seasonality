@@ -1,0 +1,31 @@
+# What sites to fit for each species
+
+spp:
+  LISP : [1, 2, 3, 4, 5]
+
+sites : [1, 2, 3, 4, 5]
+
+# Informative priors on the transmission parameter trans_beta
+#   "loss_load" gives the prior used for a_temp_loss_load and both_model_loss_load
+#   "no_loss_load" gives the prior used for null_model and trans_beta_temp
+# Format is ["prior as string", transformation]
+priors_K=4:
+  loss_load:
+    trans_beta: ["stats.uniform(loc=1e-6, scale=9.31e-5)", "minmax"]
+  no_loss_load:
+    trans_beta: ["stats.uniform(loc=1e-6, scale=9.31e-5)", "minmax"]
+
+
+priors_K=8:
+  loss_load:
+    trans_beta: ["stats.uniform(loc=1e-5, scale=1.19e-3)", "minmax"]
+  no_loss_load:
+    trans_beta: ["stats.uniform(loc=1e-5, scale=1.19e-3)", "minmax"]
+
+
+priors_K=10:
+  loss_load:
+    trans_beta: ["stats.uniform(loc=9e-5, scale=5.91e-3)", "minmax"]
+  no_loss_load:
+    trans_beta: ["stats.uniform(loc=9e-5, scale=9.91e-3)", "minmax"]
+
