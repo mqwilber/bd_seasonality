@@ -1,4 +1,6 @@
-This files describes the content of the folder containing the code and data to replicate the analyses presented in the manuscript "Once a reservoir, always a reservoir? Seasonality affects the pathogen maintenance potential of amphibian hosts". All of the analyses were performed in Python.  The Python environment from which all of the results were generated is given by the `environment.yml` file. The Python environment needed to replicate the analyses can be built from this file (see https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file).
+# Code, data and models to explore the impact of seasonality on host-parasite dynamics
+
+This files describes the content of the folder containing the code and data to replicate the analyses presented in the manuscript *Once a reservoir, always a reservoir? Seasonality affects the pathogen maintenance potential of amphibian hosts*. All of the analyses were performed in Python 3.  The Python environment from which all of the results were generated is given by the `environment.yml` file. The Python environment needed to replicate the analyses can be built from this file (see https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file).
 
 **First steps**
 
