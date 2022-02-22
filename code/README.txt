@@ -4,7 +4,7 @@
 
     - `ccs_simulation.py`: Script the performs the stochastic simulations of the best fit reduced IPMs to calculate the critical community size (CCS).
 
-    - `goodnes_of_fit.py`: Performs goodness of fit tests on best fit models and observed prevalence and intensity data.
+    - `goodness_of_fit.py`: Performs goodness of fit tests on best fit models and observed prevalence and intensity data.
 
     - `full_model.py`: Module that contains the classes used to instantiate and simulate a full host-parasite IPM.
 
