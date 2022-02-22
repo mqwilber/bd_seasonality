@@ -14,6 +14,8 @@ This files describes the content of the folder containing the code and data to r
 
 - `ccs_simulation.py`: Script the performs the stochastic simulations of the best fit reduced IPMs to calculate the critical community size (CCS).
 
+- `goodness_of_fit.py`: Performs goodness of fit tests on best fit models and observed prevalence and intensity data.
+
 - `full_model.py`: Module that contains the classes used to instantiate and simulate a full host-parasite IPM.
 
 - `model_analysis.*`: A jupyter notebook and html file that reproduces many of the plots and quantities provided in the manuscript using the fitted reduced IPMs. The HTML file gives an easy, non-interactive view into this file.  The Jupyter Notebook (ipynb) allows for exploration of the models.
